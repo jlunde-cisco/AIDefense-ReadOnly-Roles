@@ -1,1 +1,2 @@
-bash onboarding.sh -p jlunde -w "https://prod1-webhook.mcd.us.cdo.cisco.com:8093/webhook/CDO_cisco-aidefensesedemo__stc00d/gcp".  >> GPC
+bash <( curl -Ls https://raw.githubusercontent.com/jlunde-cisco/AIDefense-ReadOnly-Roles/refs/heads/main/gcp-read-only.sh ) -p ciscomcd -w "https://prod1-webhook.mcd.us.cdo.cisco.com:8093/webhook/CDO_cisco-aidefensesedemo__stc00d/gcp"
+bash <( curl -Ls https://raw.githubusercontent.com/jlunde-cisco/AIDefense-ReadOnly-Roles/refs/heads/main/azure-read-only.sh) -w "https://prod1-webhook.mcd.us.cdo.cisco.com:8093/webhook/CDO_cisco-aidefensesedemo__stc00d/azure"
