@@ -101,7 +101,6 @@ echo
 echo "Adding roles to the AI Defense Controller service account: $sa_ciscomcd_controller_email"
 controller_roles=(
     "roles/compute.viewer"
-    "roles/iam.serviceAccountUser"
     "roles/pubsub.viewer"
     "roles/logging.viewer"
     "roles/storage.viewer"
